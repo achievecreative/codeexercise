@@ -6,9 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    
     <Compile Remove="ChickenJumpArray.cs" />
-    
+    <Compile Remove="ChickenJumpLinkedList.cs" />
     <Compile Remove="TapeEquilibrium.cs" />
     <Compile Remove="threaterseats.cs" />
   </ItemGroup>
