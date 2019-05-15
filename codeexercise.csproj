@@ -6,10 +6,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="countInversions.cs"/>
+    <Compile Remove="ArrayHourglass.cs"/>
+    <Compile Remove="mergeSort.cs"/>
     <Compile Remove="ChickenJumpArray.cs" />
     <Compile Remove="ChickenJumpLinkedList.cs" />
     <Compile Remove="TapeEquilibrium.cs" />
     <Compile Remove="threaterseats.cs" />
+    <Compile Remove="makeAnagram.cs"/>
   </ItemGroup>
 
 </Project>
