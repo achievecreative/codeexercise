@@ -1,0 +1,28 @@
+using System;
+
+namespace Solutions
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(CoinsCombination(12, new[] { 1, 2, 5 }));
+        }
+
+        static int CoinsCombination(int money, int[] coins)
+        {
+            var dp = new int[money+1];
+            dp[0] = 1;
+
+            foreach(var coin in coins){
+                for(var i=1;i<dp.Length;i++){
+                    if(i>=coin){
+                        dp[i] += dp[i-coin];
+                    }
+                }
+            }
+
+            return dp[money];
+        }
+    }
+}
